@@ -24,12 +24,12 @@ jobs:
       - name: Checkout Repository Code
         uses: actions/checkout@v4 
 
-      # 2. إعداد بيئة Java 17 
+      # 2. إعداد بيئة Java 21
       # يتم استخدام إجراء (Action) جاهز لإعداد Java [cite: 38]
-      - name: Set up JDK 17
+      - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
           cache: maven # لتخزين تبعيات Maven مؤقتًا
 
